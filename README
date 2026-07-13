@@ -1,0 +1,209 @@
+# Telco Customer Churn Prediction using Machine Learning
+
+## Project Overview
+
+This project applies machine learning techniques to the IBM Telco Customer Churn dataset to analyze customer behavior and predict customer churn. The project demonstrates the complete machine learning workflow, including data preprocessing, exploratory data analysis (EDA), feature engineering, model training, hyperparameter tuning, and model evaluation.
+
+---
+
+## Objectives
+
+- Load and preprocess the Telco Customer Churn dataset.
+- Handle missing values and clean the data.
+- Convert categorical features into numerical values.
+- Perform exploratory data analysis (EDA).
+- Train multiple machine learning models.
+- Evaluate and compare model performance.
+- Predict customer churn accurately.
+
+---
+
+## Dataset
+
+- **Dataset:** IBM Telco Customer Churn Dataset
+- **File:** WA_Fn-UseC_-Telco-Customer-Churn.csv
+
+### Dataset Features
+
+The dataset contains customer information such as:
+
+- Customer ID
+- Gender
+- Senior Citizen
+- Partner
+- Dependents
+- Tenure
+- Phone Service
+- Multiple Lines
+- Internet Service
+- Online Security
+- Online Backup
+- Device Protection
+- Tech Support
+- Streaming TV
+- Streaming Movies
+- Contract
+- Paperless Billing
+- Payment Method
+- Monthly Charges
+- Total Charges
+- Churn
+
+---
+
+## Data Preprocessing
+
+The following preprocessing steps were performed:
+
+- Loaded the dataset using Pandas.
+- Checked dataset information and summary statistics.
+- Identified missing values.
+- Converted **TotalCharges** into numeric format.
+- Handled missing values using appropriate techniques.
+- Removed duplicate records.
+- Removed unnecessary columns such as **customerID**.
+- Encoded categorical features using One-Hot Encoding.
+- Split the dataset into training and testing datasets.
+- Standardized numerical features where required.
+
+---
+
+## Exploratory Data Analysis (EDA)
+
+The project includes:
+
+- Missing value analysis
+- Correlation analysis
+- Feature distribution analysis
+- Outlier detection
+- Feature importance visualization
+- Customer churn distribution
+
+---
+
+## Machine Learning Models
+
+### Regression
+
+- Linear Regression
+
+Target Variable:
+- MonthlyCharges
+
+### Classification
+
+- Logistic Regression
+- Decision Tree Classifier
+- Random Forest Classifier
+- Gradient Boosting Classifier
+
+Hyperparameter tuning was performed using **GridSearchCV**.
+
+---
+
+## Model Evaluation
+
+### Regression Metrics
+
+- Mean Absolute Error (MAE)
+- Mean Squared Error (MSE)
+- Root Mean Squared Error (RMSE)
+- R² Score
+
+### Classification Metrics
+
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+- ROC-AUC Score
+- Confusion Matrix
+- Classification Report
+
+---
+
+## Visualizations
+
+The notebook includes:
+
+- Correlation Heatmap
+- Actual vs Predicted Plot
+- Confusion Matrix
+- Feature Importance Plot
+- ROC Curve
+- Learning Curve
+- Model Comparison Charts
+
+---
+
+## Technologies Used
+
+- Python
+- Google Colab
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Joblib
+
+---
+
+## Repository Structure
+
+```
+Telco-Customer-Churn-ML/
+│
+├── Telco_Customer_Churn.ipynb
+├── WA_Fn-UseC_-Telco-Customer-Churn.csv
+├── README.md
+└── requirements.txt
+```
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/Telco-Customer-Churn-ML.git
+```
+
+Move into the project folder:
+
+```bash
+cd Telco-Customer-Churn-ML
+```
+
+Install the required packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the Jupyter Notebook or open the notebook in Google Colab.
+
+---
+
+## Results
+
+The machine learning models were successfully trained and evaluated using the IBM Telco Customer Churn dataset.
+
+Among the classification models, ensemble methods such as Random Forest and Gradient Boosting achieved strong predictive performance. Hyperparameter tuning with GridSearchCV further improved the classification results.
+
+Linear Regression was used to predict Monthly Charges, while classification models were used to predict customer churn.
+
+---
+
+## Conclusion
+
+This project demonstrates a complete end-to-end machine learning workflow for customer churn prediction. The workflow includes data preprocessing, feature engineering, exploratory data analysis, model training, hyperparameter tuning, and performance evaluation. The project illustrates how machine learning can help businesses identify customers who are likely to churn, enabling organizations to take proactive retention measures and improve customer satisfaction.
+
+---
+
+## Author
+
+**Srinidhi B**
+
+Machine Learning Project using Python and Scikit-learn.
